@@ -19,7 +19,242 @@
   </head>
 
   <body>
-   
+    <style>
+      .form-control {
+        padding: 10px 15px;
+      }
+    </style>
+   <!-- 
+    Mô hình 3 khối
+
+    - ĐẦU VÀO
+      - số tiền lương 1 ngày
+      - số ngày làm
+    - CÁC BƯỚC XỬ LÝ
+      - tạo biến soNgayLam
+      - tạo biến tongTienLuong
+      - gán giá trị cho soNgayLam
+      - tính tiền lương bằng công thức tongTienLuong = soNgayLam * 100.000
+    - ĐẦU RA
+      - trả về giá trị tổng tiền lương
+    -->
+
+
+    <div class="container p-5">
+      <h1 class="mb-3">Bài tập 1</h1>
+      <h3 class="mb-4">Tính tiền lương nhân viên</h3>
+      <div class="mb-3">
+        <label for="" class="form-label">Nhập số ngày làm</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="soNgayLam"
+          aria-describedby="helpId"
+          placeholder="Nhập số ngày làm..."
+        />
+      </div>
+      <button class="btn btn-dark" id="tinhTienLuong">Tính tiền lương</button>
+      <div class="ketQuaBai1 mt-2"></div>
+    </div>
+    <hr>
+
+      <!-- Mô hình 3 khối
+      - ĐẦU VÀO
+        - giá trị của 5 số thực
+      - CÁC BƯỚC XỬ LÝ
+        - tạo 5 biến để lấy giá trị người dùng nhập vào number1 ,number2 ,number3 ,number4 ,number5
+        - gắn 5 giá trị tương ứng với 5 biến
+        - tạo biến giaTriTB
+        - tính giá trị trung bình bằng cách giaTriTB = (number1 + number2 + number3 + number4 + number5) / 5
+      - ĐẦU RA
+        - trả về giá trị trung bình
+      -->
+
+
+    <div class="container p-5">
+      <h1 class="mb-3">Bài tập 2</h1>
+      <h3 class="mb-4">Tính Giá trị trung bình</h3>
+      <div class="row row-cols-5">
+        <div class="col mb-3">
+          <label for="" class="form-label">Nhập số thứ 1</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="number1"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 1..."
+          />
+        </div>
+        <div class="col mb-3">
+          <label for="" class="form-label">Nhập số thứ 2</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="number2"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 2..."
+          />
+        </div>
+        <div class="col mb-3">
+          <label for="" class="form-label">Nhập số thứ 3</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="number3"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 3..."
+          />
+        </div>
+        <div class="col mb-3">
+          <label for="" class="form-label">Nhập số thứ 4</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="number4"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 4..."
+          />
+          </div>
+        <div class="col mb-3">
+          <label for="" class="form-label">Nhập số thứ 5</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="number5"
+            aria-describedby="helpId"
+            placeholder="Nhập số thứ 5..."
+          />
+        </div>
+      </div>
+      <button class="btn btn-dark" id="tinhTrungBinh">Tính trung bình</button>
+      <div class="ketQuaBai2 mt-2"></div>
+    </div>
+    <hr>
+
+
+    <!-- Mô hình 3 khối
+      - ĐẦU VÀO
+        - tỉ giá USD hiện tại là 23.500 VND
+        - số tiền người dùng nhập
+      - CÁC BƯỚC XỬ LÝ
+        - tạo biến soTienUSD
+        - gán giá trị người dùng nhập vào cho biến soTienUSD
+        - tạo biến giaTriQuyDoi  = soTienUSD * 23.500
+      - ĐẦU RA
+        - trả về giá trị trung bình
+      -->
+
+
+    <div class="container p-5">
+      <h1 class="mb-3">Bài tập 3</h1>
+      <h3 class="mb-4">Quy đổi tiền tệ</h3>
+      <div class="mb-3">
+        <label for="" class="form-label">Nhập số tiền (USD)</label>
+        <input
+          type="text"
+          class="form-control"
+          name=""
+          id="soTienUSD"
+          aria-describedby="helpId"
+          placeholder="Nhập số tiền..."
+        />
+      </div>
+      <button class="btn btn-dark" id="btnQuyDoi">Quy đổi</button>
+      <div class="ketquaBai3 mt-2"></div>
+    </div>
+    <hr>
+
+
+    <!-- Mô hình 3 khối
+      - ĐẦU VÀO
+        - chiều dài , chiều rộng của hình chữ nhật
+      - CÁC BƯỚC XỬ LÝ
+        - tạo 2 biến chieuDai , chieuRong
+        - tạo 2 biến dienTich , chuVi
+        - gán giá trị cho dienTich = chieuDai * chieuRong
+        - gán giá trị co chuVi = (chieuDai + chieuRong) *2
+      - ĐẦU RA
+        - trả về giá trị diện tích , chu vi hình chữ nhật
+      -->
+
+
+    <div class="container p-5">
+      <h1 class="mb-3">Bài tập 4</h1>
+      <h3 class="mb-4">Tính diện tích , chu vi hình chữ nhật</h3>
+      <div class="row">
+        <div class="col-6">
+          <div class="mb-3">
+            <label for="" class="form-label">Nhập chiều dài</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="chieuDai"
+              aria-describedby="helpId"
+              placeholder="Nhập chiều dài..."
+              required
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="mb-3">
+            <label for="" class="form-label">Nhập chiều rộng</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="chieuRong"
+              aria-describedby="helpId"
+              placeholder="Nhập chiều rộng..."
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-dark" id="btnTinh">Tính</button>
+      <div class="ketquaBai4 mt-2"></div>
+    </div>
+    <hr>
+
+
+    <!-- Mô hình 3 khối
+      - ĐẦU VÀO
+        - 1 số gồm 2 chữ số
+      - CÁC BƯỚC XỬ LÝ
+        - tạo biến soNhapVao
+        - gán giá trị cho soNhapVao
+        - tạo biến soHangChuc
+        - tạo biến soHangDonvi
+        - gán giá trị cho biến soHangChuc = soNhapVao / 10
+        - gán giá trị cho biến soHangDonVi = soNhapVao % 10
+      - ĐẦU RA
+        - trả về giá trị là tổng 2 con số soHangChuc + soHangDonVi
+      -->
+
+
+      <div class="container p-5">
+        <h1 class="mb-3">Bài tập 5</h1>
+        <h3 class="mb-4">Tính tổng 2 ký số</h3>
+        <div class="mb-3">
+          <label for="" class="form-label">Nhập vào 1 số có 2 chữ số</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id="nhapSo"
+            aria-describedby="helpId"
+            placeholder="Nhập số..."
+          />
+        </div>
+        <button class="btn btn-dark" id="btntinhTong">Tính tổng</button>
+        <div class="ketquaBai5 mt-2"></div>
+      </div>
 
     <script src="./index.js"></script>
   </body>
