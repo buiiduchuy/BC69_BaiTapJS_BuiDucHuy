@@ -46,6 +46,7 @@
       <div class="mb-3">
         <label for="" class="form-label">Nhập số ngày làm</label>
         <input
+          autocomplete="off"
           type="text"
           class="form-control"
           name=""
@@ -79,6 +80,7 @@
         <div class="col mb-3">
           <label for="" class="form-label">Nhập số thứ 1</label>
           <input
+            autocomplete="off"
             type="text"
             class="form-control"
             name=""
@@ -90,6 +92,7 @@
         <div class="col mb-3">
           <label for="" class="form-label">Nhập số thứ 2</label>
           <input
+            autocomplete="off"
             type="text"
             class="form-control"
             name=""
@@ -101,6 +104,7 @@
         <div class="col mb-3">
           <label for="" class="form-label">Nhập số thứ 3</label>
           <input
+            autocomplete="off"
             type="text"
             class="form-control"
             name=""
@@ -112,6 +116,7 @@
         <div class="col mb-3">
           <label for="" class="form-label">Nhập số thứ 4</label>
           <input
+            autocomplete="off"
             type="text"
             class="form-control"
             name=""
@@ -123,6 +128,7 @@
         <div class="col mb-3">
           <label for="" class="form-label">Nhập số thứ 5</label>
           <input
+            autocomplete="off"
             type="text"
             class="form-control"
             name=""
@@ -157,6 +163,7 @@
       <div class="mb-3">
         <label for="" class="form-label">Nhập số tiền (USD)</label>
         <input
+          autocomplete="off"
           type="text"
           class="form-control"
           name=""
@@ -192,6 +199,7 @@
           <div class="mb-3">
             <label for="" class="form-label">Nhập chiều dài</label>
             <input
+              autocomplete="off"
               type="text"
               class="form-control"
               name=""
@@ -206,6 +214,7 @@
           <div class="mb-3">
             <label for="" class="form-label">Nhập chiều rộng</label>
             <input
+              autocomplete="off"
               type="text"
               class="form-control"
               name=""
@@ -244,12 +253,15 @@
         <div class="mb-3">
           <label for="" class="form-label">Nhập vào 1 số có 2 chữ số</label>
           <input
+            autocomplete="off"
             type="text"
             class="form-control"
             name=""
             id="nhapSo"
             aria-describedby="helpId"
             placeholder="Nhập số..."
+            maxlength="2"
+            pattern="[0-9.]+"
           />
         </div>
         <button class="btn btn-dark" id="btntinhTong">Tính tổng</button>
